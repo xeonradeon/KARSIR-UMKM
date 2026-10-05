@@ -1,0 +1,6 @@
+{
+  "name": "KasirKu POS & ERP UMKM",
+  "description": "Aplikasi Kasir POS Pintar & Manajemen Bisnis UMKM Terintegrasi",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

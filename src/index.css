@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-bone: #f7f6f2;
+    --bg-bone-card: #fcfbf8;
+    --bg-bone-muted: #efece6;
+    --border-bone: #e2ded6;
+    
+    --charcoal-900: #16191e;
+    --charcoal-800: #1f232b;
+    --charcoal-700: #292f3a;
+    --charcoal-600: #3b4251;
+    --charcoal-500: #555d6e;
+    --charcoal-400: #7b8496;
+    --charcoal-200: #c9ced8;
+    --charcoal-100: #e2e5eb;
+  }
+
+  .dark {
+    --bg-bone: #14171c;
+    --bg-bone-card: #1c2026;
+    --bg-bone-muted: #242932;
+    --border-bone: #2f3642;
+  }
+
+  body {
+    background-color: var(--bg-bone);
+    color: #1a1d24;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    overscroll-behavior-y: none;
+  }
+
+  .dark body {
+    color: #f5f4ef;
+  }
+}
+
+/* Custom smooth scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd0d8;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3a4250;
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+  input, select, textarea, button {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS/Android */
+  }
+}
